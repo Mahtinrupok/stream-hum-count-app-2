@@ -1,4 +1,9 @@
-numpy
-cv2
+numpy==1.21.1
+cv2==3.4.0
 time
 flask
+fastapi
+uvicorn
+gunicorn==19.9.0
+uvloop
+httptools
