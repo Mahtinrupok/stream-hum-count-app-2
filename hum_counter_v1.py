@@ -1,4 +1,4 @@
-
+import uvicorn
 import numpy as np
 import cv2
 
@@ -54,6 +54,8 @@ while True:
     key = cv2.waitKey(20)
     if key == 27:
        break
+if __name__ == '__main__':
+    uvicorn.run(app, host='127.0.0.1', port=8000)
 
 cap.release()
 cv2.destroyAllWindows()
