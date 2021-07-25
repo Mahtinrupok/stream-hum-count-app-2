@@ -4,6 +4,7 @@ Created on Thu Nov 14 18:57:44 2019
 
 @author: seraj
 """
+import uvicorn
 import time
 import cv2 
 from flask import Flask, render_template, Response
@@ -73,4 +74,5 @@ def video_feed():
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
     
-
+if __name__ == '__main__':
+    uvicorn.run(app, host='127.0.0.1', port=8000)
