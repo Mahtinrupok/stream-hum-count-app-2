@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run stream_hum_counter_v1.py
